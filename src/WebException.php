@@ -6,7 +6,7 @@ class WebException extends \Exception
 {
     public function __construct(
         private readonly string $title = '',
-        private readonly string $description = '',
+        string $description = '',
         private readonly string $type = '',
         private readonly int $httpStatusCode = 500,
     ) {
