@@ -1,6 +1,8 @@
 <?php
 
-namespace BlankFramework\WebExceptions;
+namespace BlankFramework\WebExceptions\ClientException;
+
+use BlankFramework\WebExceptions\WebException;
 
 class UnprocessableEntityException extends WebException
 {

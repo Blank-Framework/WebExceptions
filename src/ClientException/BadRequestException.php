@@ -1,8 +1,10 @@
 <?php
 
-namespace BlankFramework\WebExceptions;
+namespace BlankFramework\WebExceptions\ClientException;
 
-class BadRequestException
+use BlankFramework\WebExceptions\WebException;
+
+class BadRequestException extends WebException
 {
     public function __construct(
         string $message = 'Bad request sent to the server',
